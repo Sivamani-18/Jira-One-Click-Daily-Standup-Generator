@@ -1,0 +1,1 @@
+# Jira-One-Click-Daily-Standup-Generator
