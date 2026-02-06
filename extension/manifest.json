@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Jira One-Click Daily Standup Generator",
+  "version": "0.1.0",
+  "description": "Generate a concise standup update from your Jira notes.",
+  "action": {
+    "default_title": "Standup Generator",
+    "default_popup": "popup.html"
+  }
+}
