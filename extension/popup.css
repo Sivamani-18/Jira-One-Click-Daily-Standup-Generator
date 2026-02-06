@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #5c6477;
+  --primary: #2f6fed;
+  --primary-dark: #1d4ed8;
+  --border: #d8dde8;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-width: 320px;
+}
+
+.container {
+  padding: 16px;
+  width: 340px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+header p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.form,
+.output {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form label,
+.output label {
+  font-weight: 600;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 8px;
+  font-family: inherit;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+button {
+  flex: 1;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+}
+
+button.secondary {
+  background: #e6e9f3;
+  color: var(--text);
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+button.secondary:hover {
+  background: #d6dbe8;
+}
+
+.output textarea {
+  min-height: 90px;
+  background: #f9fafc;
+}
+
+.status {
+  margin: 4px 0 0;
+  color: var(--muted);
+  min-height: 18px;
+}

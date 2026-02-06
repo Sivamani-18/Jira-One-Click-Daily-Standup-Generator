@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Standup Generator</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Daily Standup</h1>
+        <p>Draft your update and copy it to Slack or Teams.</p>
+      </header>
+
+      <section class="form">
+        <label for="yesterday">Yesterday</label>
+        <textarea id="yesterday" placeholder="Shipped login fix, reviewed PR #128"></textarea>
+
+        <label for="today">Today</label>
+        <textarea id="today" placeholder="Finish API tests, start dashboard story"></textarea>
+
+        <label for="blockers">Blockers</label>
+        <textarea id="blockers" placeholder="Waiting on API token refresh"></textarea>
+      </section>
+
+      <section class="actions">
+        <button id="generate">Generate & Copy</button>
+        <button id="reset" class="secondary">Clear</button>
+      </section>
+
+      <section class="output">
+        <label for="standup">Generated update</label>
+        <textarea id="standup" readonly></textarea>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
